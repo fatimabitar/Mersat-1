@@ -142,3 +142,4 @@ function viewPhoto(obj) {
   document.getElementById("commentary").innerHTML = objAlt;
   console.log(objAlt);
 }
+
