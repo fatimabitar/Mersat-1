@@ -155,7 +155,7 @@
       box-shadow: 0 0 0 0 #eee;
     }
     70% {
-      box-shadow: 0 0 0 1rem #fcbaba;
+      box-shadow: 0 0 0 1rem #83c8ff;
     }
     100% {
       box-shadow: 0 0 0 0 #eee;
@@ -170,32 +170,5 @@
   @keyframes shine {
     100% {
       left: 125%;
-    }
-  }
-
-  @-webkit-keyframes circle {
-    0% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 1;
-    }
-    100% {
-      width: 200%;
-      height: 200%;
-      opacity: 0;
-    }
-  }
-  @keyframes circle {
-    0% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 1;
-    }
-    100% {
-      width: 200%;
-      height: 200%;
-      opacity: 0;
     }
   }

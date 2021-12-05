@@ -54,7 +54,7 @@ body {
   background-color: #83c8ff;
 }
 .bg-blue {
-  background-color: #216ae6;
+  background-color: #216ae6 !important;
 }
 .text-pink {
   color: #fec2c2 !important;
@@ -62,12 +62,7 @@ body {
 .font-weight {
   font-weight: 400 !important;
 }
-.center-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 
 /* Start To Top Button  */
 #toTopButton {
@@ -100,15 +95,7 @@ body {
   background: #fff;
   font-weight: 400;
 }
-.linear {
-  background: linear-gradient(to right, var(--blue-color), #51a5f5);
-}
 
-.shadow1{
-  box-shadow: 9px 15px 226px 48px rgba(255,246,246,0.61);
-  -webkit-box-shadow: 9px 15px 226px 48px rgba(255,246,246,0.61);
-  -moz-box-shadow: 9px 15px 226px 48px rgba(255,246,246,0.61);
-}
 .bg-gray{
   background-color: #dcd0f3 !important;
 }
@@ -118,12 +105,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  height: 100%;
 }
 .line {
   width: 900px;
   margin: 3rem auto 1rem;
   height: 2px;
   background-color: #aaa;
+}
+.svg-back {
+  background: url(../images/background.svg) !important;
+  background-position: top;
+}
+.transparent-title{
+background-color: rgba(0, 0, 0, .2);
+justify-content: space-evenly;
+align-items: center;
+animation: upDown 2s ease-in infinite;
+position: absolute;
+top: 20% ;
+left: -1%;
+box-shadow: 25px 25px 10px rgba(0, 0, 0, .1);
 }
