@@ -80,11 +80,6 @@ gsap.from(".carousel", 2, {
   x: 200,
   ease: Power3.ease,
 });
-gsap.from("#photo-view-container", 2, {
-  scrollTrigger: "#photo-view-container",
-  x: 200,
-  ease: Power3.ease,
-});
 
 //Parallax Images
 const tl1 = gsap.timeline({
@@ -102,39 +97,14 @@ tl1.to(".column", 1, {
 });
 
 
-/********** Image Gallery **********/
 
-marginL = 0;
-function leftRight(obj) {
-  spaceLeft = document.getElementById("photo-container").style.marginLeft;
-  spaceLeft = spaceLeft.replace("px", null);
-  spaceLeft = parseInt(spaceLeft);
-  step = 300;
-  totalLength = document.querySelectorAll(".photo-item").length;
-  totalLength *= -115;
-  objId = obj.id;
-  if (objId == "left") {
-    if (spaceLeft >= -step) {
-      marginL = 0;
-    } else {
-      marginL += step;
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
     }
   }
-  if (objId == "right") {
-    if (spaceLeft <= totalLength + 500 + step) {
-      marginL = totalLength + 500;
-    } else {
-      marginL -= step;
-    }
-  }
-  document.getElementById("photo-container").style.marginLeft = marginL + "px";
-}
-function viewPhoto(obj) {
-  objUrl = obj.src;
-  objAlt = obj.alt;
-  document.getElementById("photo-display").innerHTML =
-    '<img src="' + objUrl + '" id="selected-photo" alt="">';
-  document.getElementById("commentary").innerHTML = objAlt;
-  console.log(objAlt);
-}
-
+);

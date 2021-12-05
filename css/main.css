@@ -34,7 +34,7 @@ header .content .header-title {
   text-transform: capitalize;
 }
 header .content .header-title span {
-  color: #303130;
+  color: rgb(2, 40, 71);
   font-weight: 700;
 }
 
@@ -281,6 +281,7 @@ header .content p.lead {
   position: absolute;
   overflow: hidden;
   cursor: pointer;
+  border-radius: var(--raduis);
 }
 .f-img:hover img {
   transform: scale(1.1);
@@ -301,18 +302,28 @@ header .content p.lead {
 .f-img-1 {
   left: 15%;
   top: 7%;
+  box-shadow: -25px -25px 10px rgba(0, 0, 0, 0.1);
+  -webkit-animation: upDown 2s infinite ease-in-out;
+  animation: upDown 2s infinite ease-in-out;
 }
 .f-img-2 {
   left: 15%;
   top: 50%;
+  box-shadow: -25px -25px 10px rgba(0, 0, 0, 0.1);
+  -webkit-animation: upDown 2s infinite ease-in-out;
+  animation: upDown 2s infinite ease-in-out;
 }
 .f-img-4 {
   right: 15%;
   top: 7%;
+  -webkit-animation: upDown 2s infinite ease-in-out;
+  animation: upDown 2s infinite ease-in-out;
 }
 .f-img-5 {
   right: 15%;
   top: 50%;
+  -webkit-animation: upDown 2s infinite ease-in-out;
+  animation: upDown 2s infinite ease-in-out;
 }
 
 /**********************
@@ -336,6 +347,7 @@ header .content p.lead {
   justify-content: center;
   align-items: center;
   margin: 3rem auto 0;
+  border-radius: var(--raduis);
 }
 .s-grid-box{
   width: 500px;
@@ -371,7 +383,7 @@ header .content p.lead {
 }
 .roll-up-sec .transparent-title {
   top: 4%;
-  left: 40%;
+  left: 42%;
   background-color: transparent;
   animation: none;
   box-shadow: none;
