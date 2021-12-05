@@ -7,7 +7,6 @@
   --green: #b0ffca;
   --gray: #555;
   --main: #334a96;
-  --yellow: rgb(237, 247, 110);
 }
 
 header {
@@ -35,7 +34,7 @@ header .content .header-title {
   text-transform: capitalize;
 }
 header .content .header-title span {
-  color: var(--green);
+  color: #303130;
   font-weight: 700;
 }
 
@@ -54,38 +53,15 @@ header .content p.lead {
   font-weight: 600;
   transition: all 0.7s ease-in;
 }
-.bg-circle {
-  position: absolute;
-  left: 0%;
-  top: -25%;
-  z-index: 1;
-  width: 35rem;
-  height: 35rem;
-  border-radius: 100vw;
-  background-color: var(--green);
-  opacity: 0.3;
-}
-
 .btn:hover {
   color: var(--blue-color) !important;
   background-color: #eee;
-}
-.full-btn {
-  border: 2px solid var(--blue-color);
-  display: flex-inline;
-  justify-content: center;
-  align-items: center;
-  color: var(--blue-color);
-}
-.full-btn:hover {
-  background-color: var(--blue-color);
-  color: #eee !important;
 }
 
 .navbar {
   z-index: 5;
   background-color: var(--blue-color);
-  width: 100vw !important;
+  width: 100% !important;
 }
 .dropdown-menu {
   background-color: var(--blue-color);
@@ -263,7 +239,7 @@ header .content p.lead {
   flex-wrap: wrap;
 }
 .box {
-  width: 375px;
+  width: 370px;
   height: 325px;
   cursor: pointer;
   overflow: hidden;
@@ -299,8 +275,8 @@ header .content p.lead {
   height: 100vh;
 }
 .f-img {
-  width: 250px;
-  height: 300px;
+  width: 240px;
+  height: 290px;
   box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   overflow: hidden;
@@ -317,10 +293,10 @@ header .content p.lead {
   filter: contrast(10px);
 }
 .f-img-3 {
-  left: 33%;
-  top: 7%;
-  width: 500px;
-  height: 600px;
+  left: 36%;
+  top: 20%;
+  width: 400px;
+  height: 450px;
 }
 .f-img-1 {
   left: 15%;
