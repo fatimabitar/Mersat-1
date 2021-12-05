@@ -407,7 +407,7 @@ header .content p.lead {
 /****** Parallex Images slider*******/
 .images-slider {
   height: 75vh;
-  background-color: var(--hover);
+  background-color: var(--main);
   z-index: -1;
   width: 100%;
   overflow: hidden;
