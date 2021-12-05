@@ -11,6 +11,15 @@ const tl = gsap.timeline({
   duration: 2,
 });
 
+
+//Services
+gsap.from(".services", 2, {
+  scrollTrigger: ".services",
+  opacity: 0,
+  y: -200,
+  ease: Power3.ease,
+});
+
 //4 Box in row
 gsap.from(".box-1", 2, {
   scrollTrigger: ".divs-grid",
@@ -62,20 +71,7 @@ gsap.from(".content", 1.5, {
   opacity: 0,
   ease: Power3.ease,
 });
-gsap.from(".m-grid", 1.5, {
-  scrollTrigger: "m-grid",
-  y: 200,
-  opacity: 0,
-  ease: Power3.ease,
-});
 
-//Services
-gsap.from(".services", 2, {
-  scrollTrigger: ".services",
-  opacity: 0,
-  y: 200,
-  ease: Power3.ease,
-});
 
 //Carousel
 gsap.from(".carousel", 2, {
