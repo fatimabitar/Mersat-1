@@ -86,7 +86,6 @@ gsap.from(".carousel", 2, {
 });
 gsap.from("#photo-view-container", 2, {
   scrollTrigger: "#photo-view-container",
-  opacity: 0,
   x: 200,
   ease: Power3.ease,
 });
