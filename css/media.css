@@ -353,6 +353,12 @@
   .product-6 {
     margin-top: 5rem !important;
   }
+  .g-col{
+    background: #eee !important;
+  }
+  .gaols .title{
+    padding-bottom: 2rem !important;
+  }
 }
 @media (max-width: 600px) {
   header .banner {
@@ -419,6 +425,10 @@
     top: -18% !important;
     left: 20% !important;
     font-size: 1.5rem;
+  }
+  .mission-sec h2,
+  .goals-sec h2{
+    margin-bottom: 3rem !important;
   }
 }
 

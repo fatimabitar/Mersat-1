@@ -62,6 +62,7 @@ header .content p.lead {
   z-index: 5;
   background-color: var(--blue-color);
   width: 100% !important;
+  overflow: hidden;
 }
 .dropdown-menu {
   background-color: var(--blue-color);
@@ -237,9 +238,10 @@ header .content p.lead {
 .divs-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .box {
-  width: 370px;
+  width: 360px;
   height: 325px;
   cursor: pointer;
   overflow: hidden;
