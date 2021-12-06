@@ -23,15 +23,16 @@ header {
 }
 
 header .banner {
-  position: absolute;
+  /* position: absolute;
   right: 0%;
-  top: -3%;
+  top: 15%; */
   -webkit-animation: upDown 2s infinite ease-in-out;
   animation: upDown 2s infinite ease-in-out;
   z-index: 2;
-  clip-path: circle(50% at 50%);
-  width: 320px;
-  height: 320px;
+  padding-top: 5rem;
+  /* clip-path: circle(50% at 50%);
+  width: 350px;
+  height: 350px; */
 }
 
 header .content .header-title {

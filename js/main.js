@@ -11,12 +11,19 @@ const tl = gsap.timeline({
   duration: 2,
 });
 
-
 //Services
 gsap.from(".services", 2, {
   scrollTrigger: ".services",
   opacity: 0,
   y: -200,
+  ease: Power3.ease,
+});
+
+//Carousel
+gsap.from(".carousel", 2, {
+  scrollTrigger: ".carousel",
+  opacity: 0,
+  x: 200,
   ease: Power3.ease,
 });
 
@@ -67,18 +74,27 @@ gsap.from(".hero", 2, {
 });
 gsap.from(".content", 1.5, {
   scrollTrigger: "header",
-  y: 200,
+  x: -200,
   opacity: 0,
   ease: Power3.ease,
 });
 
-
-//Carousel
-gsap.from(".carousel", 2, {
-  scrollTrigger: ".carousel",
+//S-grid
+gsap.from(".stagger3", {
+  scrollTrigger: ".s-grid",
+  opacity: 0,
+  x: -200,
+  stagger: 0,
+  ease: "ease",
+  duration: 1.5,
+});
+gsap.from(".stagger4", {
+  scrollTrigger: ".s-grid",
   opacity: 0,
   x: 200,
-  ease: Power3.ease,
+  stagger: 0,
+  ease: "ease",
+  duration: 1.5,
 });
 
 //Parallax Images
@@ -95,16 +111,3 @@ tl1.to(".column", 1, {
   y: 300,
   rotation: 7,
 });
-
-
-
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
