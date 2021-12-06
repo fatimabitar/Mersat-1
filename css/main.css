@@ -520,3 +520,7 @@ background-size: cover;
 .goals-sec .row{
   height: 500px;
 }
+
+.about .row{
+  /* height: 500px; */
+}
