@@ -388,9 +388,6 @@
   .services .title {
     margin-top: 0;
   }
-  h2.title::before {
-    left: 20% !important;
-  }
   .side-title .btn {
     margin-bottom: 2rem !important;
   }
@@ -422,9 +419,12 @@
   .mission-sec > ul{
     padding: 1rem !important;
   }
+  .product-1 h2{
+    margin-bottom: 2.5rem !important;
+  }
 }
 
-@media (max-width:500px) {
+@media (max-width:450px) {
   .c-header h2 {
     color: #444 !important;
     padding-bottom: 2rem !important;
