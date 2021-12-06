@@ -430,6 +430,12 @@
   .goals-sec h2{
     margin-bottom: 3rem !important;
   }
+  .roll-up-sec .transparent-title {
+  display: none !important;
+  }
+  .mission-sec > ul{
+    padding: 1rem !important;
+  }
 }
 
 @media (max-width: 375px) {
