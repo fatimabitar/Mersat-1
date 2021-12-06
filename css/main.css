@@ -8,7 +8,9 @@
   --gray: #555;
   --main: #334a96;
 }
-
+.container-fluid{
+  overflow-x: hidden;
+}
 header {
   background-color: var(--green);
   overflow: hidden;
@@ -16,16 +18,20 @@ header {
   height: 100vh;
   background: url("../images/background.svg");
   margin-bottom: 5rem;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header .banner {
   position: absolute;
-  right: -10%;
-  top: -17%;
+  right: 0%;
+  top: -3%;
   -webkit-animation: upDown 2s infinite ease-in-out;
   animation: upDown 2s infinite ease-in-out;
   z-index: 2;
   clip-path: circle(50% at 50%);
+  width: 320px;
+  height: 320px;
 }
 
 header .content .header-title {
@@ -350,9 +356,9 @@ header .content p.lead {
   border-radius: var(--raduis);
 }
 .s-grid-box{
-  width: 500px;
-  height: 400px;
-  margin:0 1rem 2rem;
+  width: 400px;
+  height: 350px;
+  margin:0 3rem 2rem;
   cursor: pointer;
   overflow: hidden;
 }
