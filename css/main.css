@@ -17,7 +17,7 @@ header {
   position: relative;
   height: 100vh;
   background: url("../images/background.svg");
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -516,10 +516,10 @@ background-size: cover;
 /*********
  * Mission
  *********/
-.mission-sec .row,
+/* .mission-sec .row,
 .goals-sec .row{
-  height: 500px;
-}
+  height: a;
+} */
 
 .about .row{
   /* height: 500px; */

@@ -11,6 +11,20 @@ const tl = gsap.timeline({
   duration: 2,
 });
 
+//About
+gsap.from(".a-right",2,{
+  scrollTrigger: ".about",
+  opacity: 0.3,
+  x: -200,
+  ease: Power3.ease,
+})
+gsap.from(".a-left",2,{
+  scrollTrigger: ".about",
+  opacity: 0.3,
+  x: 200,
+  ease: Power3.ease,
+})
+
 //Services
 gsap.from(".services", 2, {
   scrollTrigger: ".services",

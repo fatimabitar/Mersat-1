@@ -132,6 +132,7 @@ box-shadow: 25px 25px 10px rgba(0, 0, 0, .1);
 .bg-gray-svg{
   background: url("../images/RectGray.svg") !important;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .bg-main{
   background-color: #243f90 !important;
