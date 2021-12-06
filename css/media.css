@@ -424,7 +424,7 @@
   }
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
   .c-header h2 {
     color: #444 !important;
     padding-bottom: 2rem !important;
