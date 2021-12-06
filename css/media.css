@@ -356,8 +356,8 @@
   .g-col{
     background: #eee !important;
   }
-  .gaols .title{
-    padding-bottom: 2rem !important;
+  .goals-sec .row{
+    flex-direction: column-reverse !important;
   }
 }
 @media (max-width: 600px) {
@@ -394,9 +394,6 @@
   .side-title .btn {
     margin-bottom: 2rem !important;
   }
-  .title {
-    margin-top: 0 !important;
-  }
   .product-5 {
     margin: 5rem 0 !important;
     overflow: auto;
@@ -414,18 +411,7 @@
     width: 100% !important;
     margin: 0 auto !important;
   }
-}
-
-@media (max-width: 414px) {
-  .c-header h2 {
-    color: #444 !important;
-    padding-bottom: 2rem;
-  }
-  .roll-up-sec .transparent-title {
-    top: -18% !important;
-    left: 20% !important;
-    font-size: 1.5rem;
-  }
+  
   .mission-sec h2,
   .goals-sec h2{
     margin-bottom: 3rem !important;
@@ -435,6 +421,33 @@
   }
   .mission-sec > ul{
     padding: 1rem !important;
+  }
+}
+
+@media (max-width:450px) {
+  .c-header h2 {
+    color: #444 !important;
+    padding-bottom: 2rem !important;
+  }
+  .roll-up-sec .transparent-title {
+    top: -18% !important;
+    left: 20% !important;
+    font-size: 1.5rem;
+  }
+
+  .mission-sec h2,
+  .goals-sec h2,
+  .product-1 h2{
+    margin-bottom: 3rem !important;
+  }
+  .roll-up-sec .transparent-title {
+  display: none !important;
+  }
+  .mission-sec > ul{
+    padding: 1rem !important;
+  }
+  .goals-sec .row{
+    flex-direction: column-reverse !important;
   }
 }
 
@@ -462,9 +475,6 @@
   .mission-sec .row,
   .goals-sec .row {
     height: auto !important;
-  }
-  .goals-sec .row{
-    flex-direction: column-reverse !important;
   }
 }
 @media (max-width: 320px) {
